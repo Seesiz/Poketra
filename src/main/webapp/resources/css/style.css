@@ -1,0 +1,80 @@
+:root{
+    --primary: #00162b;
+    --secondary: #0a1c30;
+    --third: #437b6e;
+    --bg: #e4e5e7;
+    --card: #ffffff;
+}
+
+*{
+    transition: 0.4s;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+body{
+    background: var(--bg);
+}
+
+.card{
+    background: var(--card);
+    border-radius: 9px;
+}
+
+.side-bar{
+    border-radius: 0px !important;
+    background: linear-gradient(70deg, var(--primary), var(--third)) !important;
+}
+
+.menu .active{
+    background: var(--bg);
+    color: var(--third);
+    box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.11);
+}
+
+.menu .active:hover{
+    cursor: pointer;
+    color: var(--third);
+    background: var(--bg);
+}
+
+.menu li{
+    list-style: none;
+    padding: 4% 8%;
+    color: white;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, var(--secondary) ,transparent);
+}
+
+.form-control, .form-select{
+    background: var(--bg) !important;
+    border: none !important;
+}
+
+header{
+    padding: 1% 2%;
+}
+
+.list-group li{
+    background: var(--bg) !important;
+    border: none!important;
+}
+
+.accordion-item, .accordion-header, .accordion-button{
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+}
+
+.accordion-collapse{
+    padding: 2% 0%;
+}
