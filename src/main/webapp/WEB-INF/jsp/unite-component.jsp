@@ -26,10 +26,10 @@
             contentType: false,
             processData: false,
             success: function(response){
-                console.log(response);
+                alert("SUCCESS");
             },
             error: function(response){
-                console.log(response);
+                alert("ERROR");
             }
         })
     }

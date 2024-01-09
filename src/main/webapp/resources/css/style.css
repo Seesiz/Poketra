@@ -8,6 +8,7 @@
 
 *{
     transition: 0.4s;
+    font-family: sans-serif;
 }
 
 a{
@@ -20,7 +21,7 @@ body{
 
 .card{
     background: var(--card);
-    border-radius: 9px;
+    border-radius: 3px !important;
 }
 
 .side-bar{

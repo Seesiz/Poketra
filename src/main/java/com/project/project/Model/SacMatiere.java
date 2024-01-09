@@ -15,6 +15,16 @@ public class SacMatiere {
     @JoinColumn(name = "sacMatiereIdSac")
     Sac sacSac;
 
+    public double getSacMatiereQuantite() {
+        return sacMatiereQuantite;
+    }
+
+    public void setSacMatiereQuantite(double sacMatiereQuantite) {
+        this.sacMatiereQuantite = sacMatiereQuantite;
+    }
+
+    double sacMatiereQuantite;
+
     public int getSacMatiereId() {
         return sacMatiereId;
     }
