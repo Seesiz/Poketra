@@ -18,6 +18,8 @@
                         <a href="/main/?title=Matiere&page=matiere"><li id="matiere" class="adminbtn"><i class="fa-brands fa-elementor"></i> Matiere</li></a>
                         <a href="/quantite"><li id="quantite" class="adminbtn"><i class="fa-solid fa-hashtag"></i>Quantite</li></a>
                         <a href="/creation"><li id="creation" class="adminbtn"><i class="fa fa-tape"></i>Creation</li></a>
+                        <a href="/stockMatiere"><li id="stock" class="adminbtn"><i class="fa fa-box"></i>Stock</li></a>
+                        <a href="/fabrication"><li id="fabrication" class="adminbtn"><i class="fa fa-industry"></i>Fabrication</li></a>
                     </ul>
                 </div>
             </div>
