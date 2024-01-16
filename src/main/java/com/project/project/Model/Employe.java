@@ -21,8 +21,7 @@ public class Employe {
     public void setDuree_Employe(double duree_Employe) {
         this.duree_Employe = duree_Employe;
     }
-
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     Sac sac_Employe;
 
     public Employe() {

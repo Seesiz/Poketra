@@ -7,7 +7,7 @@
     <header>
         <span style="font-size: 30px">Gestion de duree:</span>
     </header>
-    <form class="row d-flex justify-content-between p-4" id="myForm">
+    <form class="row d-flex justify-content-between p-4" id="myForm" method="post" action="/employe">
         <span class="col-12 d-flex flex-column align-items-start">
             <label for="sac">Sac:</label>
             <select name="idsac" id="sac" class="form-control">
@@ -16,42 +16,12 @@
                 <% } %>
             </select>
         </span>
-        <span class="d-flex gap-2">
-            <input type="text" name="designation_Employe">
-            <input type="number" name="quantite_Employe">
-            <input type="number" name="duree_Employe">
-            <input type="number" name="salaire_Employe">
+        <span class="d-flex gap-2 justify-content-evenly mt-2">
+            <input type="text" name="designation_Employe" class="form-control" placeholder="Designation">
+            <input type="number" name="quantite_Employe" class="form-control" placeholder="Quantite">
+            <input type="number" name="duree_Employe" class="form-control" placeholder="Duree">
+            <input type="number" name="salaire_Employe" class="form-control" placeholder="Salaire">
         </span>
         <button class="btn btn-primary mt-2">Valider</button>
     </form>
 </div>
-<script>
-    function sendData(event){
-        var formDataArray = $("#myForm").serializeArray();
-        var formData = new FormData();
-        $.each(formDataArray, function(index, field){
-            formData.append(field.name, field.value);
-        });
-
-        $.ajax({
-            type: 'POST',
-            url: '/unite',
-            data: formData,
-            contentType: false,
-            processData: false,
-            success: function(response){
-                alert("SUCCESS");
-            },
-            error: function(response){
-                alert("ERROR");
-            }
-        })
-    }
-
-    $(document).ready(function(){
-        $("#myForm").submit(function(event){
-            event.preventDefault();
-            sendData(event);
-        })
-    })
-</script>
