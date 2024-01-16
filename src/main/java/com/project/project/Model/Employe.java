@@ -22,17 +22,17 @@ public class Employe {
         this.duree_Employe = duree_Employe;
     }
     @ManyToOne
-    Sac sac_Employe;
+    Sac sacEmploye;
 
     public Employe() {
     }
 
-    public Employe(int id_Employe, String designation_Employe, double salaire_Employe, int quantite_Employe, Sac sac_Employe) {
+    public Employe(int id_Employe, String designation_Employe, double salaire_Employe, int quantite_Employe, Sac sacEmploye) {
         this.id_Employe = id_Employe;
         this.designation_Employe = designation_Employe;
         this.salaire_Employe = salaire_Employe;
         this.quantite_Employe = quantite_Employe;
-        this.sac_Employe = sac_Employe;
+        this.sacEmploye = sacEmploye;
     }
 
     public int getId_Employe() {
@@ -67,11 +67,11 @@ public class Employe {
         this.quantite_Employe = quantite_Employe;
     }
 
-    public Sac getSac_Employe() {
-        return sac_Employe;
+    public Sac getSacEmploye() {
+        return sacEmploye;
     }
 
-    public void setSac_Employe(Sac sac_Employe) {
-        this.sac_Employe = sac_Employe;
+    public void setSacEmploye(Sac sac_Employe) {
+        this.sacEmploye = sac_Employe;
     }
 }

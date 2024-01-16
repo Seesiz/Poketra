@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/employe")
 public class EmployeController {
@@ -25,6 +27,14 @@ public class EmployeController {
         return "main-component";
     }
 
+    @GetMapping("/{idSac}")
+    @ResponseBody
+    public List<Employe> getList(@PathVariable("idSac") int idSac){
+        Sac sac = new Sac();
+        sac.setSacId(idSac);
+        return employeRepo.findAllBySacEmploye(sac);
+    }
+
     @PostMapping
     public String post(@RequestParam("designation_Employe") String des,  @RequestParam("quantite_Employe") int quan, @RequestParam("duree_Employe") double duree, @RequestParam("salaire_Employe") double salaire, @RequestParam("idsac") int idSac){
         System.out.println(idSac);
@@ -35,7 +45,7 @@ public class EmployeController {
         e.setQuantite_Employe(quan);
         Sac s = new Sac();
         s.setSacId(idSac);
-        e.setSac_Employe(s);
+        e.setSacEmploye(s);
         employeRepo.save(e);
         return "redirect:/employe";
     }

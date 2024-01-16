@@ -21,6 +21,8 @@
                         <a href="/creation"><li id="creation" class="adminbtn"><i class="fa fa-tape"></i>Creation</li></a>
                         <a href="/stockMatiere"><li id="stock" class="adminbtn"><i class="fa fa-box"></i>Stock</li></a>
                         <a href="/fabrication"><li id="fabrication" class="adminbtn"><i class="fa fa-industry"></i>Fabrication</li></a>
+                        <a href="/benefice"><li id="benefice" class="adminbtn"><i class="fa fa-industry"></i>Benefice</li></a>
+
                     </ul>
                 </div>
             </div>
