@@ -18,6 +18,16 @@ public class Sac {
     Taille sacTaille;
     double sacPrix;
 
+    public double getSacDuree() {
+        return sacDuree;
+    }
+
+    public void setSacDuree(double sacDuree) {
+        this.sacDuree = sacDuree;
+    }
+
+    double sacDuree;
+
     public Sac() {
     }
 
