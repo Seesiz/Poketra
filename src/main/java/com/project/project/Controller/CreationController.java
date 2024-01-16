@@ -42,7 +42,6 @@ public class CreationController {
     @PostMapping
     public String handleCreationPost(@RequestParam("nom") String mat_nom,
                                      @RequestParam("look") int mat_look,
-                                     @RequestParam("duree") int sac_duree,
                                      @RequestParam("type") int mat_type,
                                      @RequestParam("taille") int mat_taille,
                                      @RequestParam("matiere") List<Integer> matiereIds,
@@ -50,7 +49,6 @@ public class CreationController {
                                      Model model) {
         try{
             Sac sac = new Sac();
-            sac.setSacDuree(sac_duree);
             sac.setSacNom(mat_nom);
             Look l = new Look();
             l.setLookId(mat_look);

@@ -17,10 +17,6 @@
             <input type="text" name="nom" id="name" class="form-control" placeholder="Nom">
         </span>
         <span class="col-6 d-flex flex-column align-items-start">
-            <label for="duree">Duree:</label>
-            <input type="number" name="duree" id="duree" class="form-control" placeholder="Duree">
-        </span>
-        <span class="col-6 d-flex flex-column align-items-start">
             <label for="taillei">Taille:</label>
             <select class="form-select" id="taillei" name="taille">
                 <option selected disabled>Choix du taille</option>
