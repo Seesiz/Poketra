@@ -1,13 +1,13 @@
 package com.project.project.Controller;
 
+import com.project.project.Model.Employe;
+import com.project.project.Model.Sac;
 import com.project.project.Model.repository.SacRepo;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/employe")
@@ -23,7 +23,10 @@ public class EmployeController {
     }
 
     @PostMapping
-    public String post(){
+    public String post(@ModelAttribute Employe e, @RequestParam("idsac") int idSac){
+        Sac s = new Sac();
+        s.setSacId(idSac);
+        e.setSac_Employe(s);
         return "redirect:/employe";
     }
 }

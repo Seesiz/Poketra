@@ -19,7 +19,8 @@
         <span class="d-flex gap-2">
             <input type="text" name="designation_Employe">
             <input type="number" name="quantite_Employe">
-            <input type="duree">
+            <input type="number" name="duree_Employe">
+            <input type="number" name="salaire_Employe">
         </span>
         <button class="btn btn-primary mt-2">Valider</button>
     </form>

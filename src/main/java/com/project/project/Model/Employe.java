@@ -11,6 +11,17 @@ public class Employe {
     String designation_Employe;
     double salaire_Employe;
     int quantite_Employe;
+
+    double duree_Employe;
+
+    public double getDuree_Employe() {
+        return duree_Employe;
+    }
+
+    public void setDuree_Employe(double duree_Employe) {
+        this.duree_Employe = duree_Employe;
+    }
+
     @ManyToOne(cascade = CascadeType.ALL)
     Sac sac_Employe;
 
