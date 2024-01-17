@@ -48,6 +48,10 @@ public class BeneficeController {
     @GetMapping("/{min}/{max}")
     @ResponseBody
     public List<Benefice> getFiltre(@PathVariable("min") double min, @PathVariable("max") double max){
-        return beneficeRepo.findAllByBeneficeBetween(min, max);
+        List<Benefice> b = beneficeRepo.findAllByBeneficeBetween(min, max);
+        for (int i = 0; i<b.size();i++){
+            b.get(i).setSac(sacRepo.findById(b.get(i).getSac_id()).get());
+        }
+        return b;
     }
 }

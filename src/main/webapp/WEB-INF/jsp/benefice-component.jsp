@@ -57,7 +57,7 @@
                 $("#tbodydata").text("");
                 for (let item of response){
                     var tr = $("<tr></tr>");
-                    var td1 = $("<td>"+item.sac_nom+"</td>");
+                    var td1 = $("<td>"+item.sac_nom+" "+item.sac.sacTaille.tailleNom+"</td>");
                     var td2 = $("<td>"+item.benefice+"</td>");
                     tr.append(td1);
                     tr.append(td2);

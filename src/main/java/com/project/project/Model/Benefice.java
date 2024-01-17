@@ -3,6 +3,7 @@ package com.project.project.Model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name = "view_benefice")
@@ -11,6 +12,18 @@ public class Benefice {
     int sac_id;
     String sac_nom;
     double benefice;
+
+    @Transient
+    Sac sac;
+
+    public Sac getSac() {
+        return sac;
+    }
+
+    public void setSac(Sac sac) {
+        this.sac = sac;
+    }
+
     public Benefice() {
     }
 
