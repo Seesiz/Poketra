@@ -24,6 +24,7 @@
                         <a href="/benefice"><li id="benefice" class="adminbtn"><i class="fa fa-plus"></i>Benefice</li></a>
                         <a href="/poste"><li id="poste" class="adminbtn"><i class="fa fa-clipboard"></i>Poste</li></a>
                         <a href="/travailleur"><li id="travailleur" class="adminbtn"><i class="fa fa-person"></i>Employer</li></a>
+                        <a href="/grade"><li id="grade" class="adminbtn"><i class="fa fa-person"></i>Grade</li></a>
                     </ul>
                 </div>
             </div>

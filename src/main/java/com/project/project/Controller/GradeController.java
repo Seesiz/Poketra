@@ -21,8 +21,13 @@ public class GradeController {
         return "main-component";
     }
     @PostMapping
-    public String insert(@ModelAttribute Grade grade){
-        gradeRepo.save(grade);
-        return "main-component";
+    public String insert(@RequestParam("grade") String grade, @RequestParam("taux") double taux, @RequestParam("debut") double debut, @RequestParam("fin") double fin){
+        Grade g = new Grade();
+        g.setGrade(grade);
+        g.setDebut(debut);
+        g.setFin(fin);
+        g.setTaux(taux);
+        gradeRepo.save(g);
+        return "redirect:/grade";
     }
 }

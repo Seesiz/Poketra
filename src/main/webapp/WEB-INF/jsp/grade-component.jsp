@@ -1,6 +1,6 @@
 <div class="card col-12 p-0">
     <header>
-        <span style="font-size: 30px">Poste: </span>
+        <span style="font-size: 30px">Ajout de grade: </span>
     </header>
     <form class="row d-flex justify-content-between p-4" id="thirdForm" method="POST" action="/grade">
         <span class="col-6 d-flex flex-column align-items-start">
