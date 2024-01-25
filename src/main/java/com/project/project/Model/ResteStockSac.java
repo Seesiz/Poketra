@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "view_stockSac")
+@Table(name = "view_stocksac")
 public class ResteStockSac {
     @Id
     int sacId;

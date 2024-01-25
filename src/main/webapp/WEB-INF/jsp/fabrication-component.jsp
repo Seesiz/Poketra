@@ -2,8 +2,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.project.project.Model.ResteStockSac" %>
 <% List<Sac> allSac = (List<Sac>) request.getAttribute("sacs"); %>
-
-
 <div class="card col-12 p-0">
     <header>
         <span style="font-size: 30px">Fabrication: </span>${error}
@@ -14,7 +12,7 @@
             <select class="form-select" id="sac" name="sac">
                 <option selected disabled>Choix de sac</option>
                 <% for(Sac t : allSac){ %>
-                    <option value="<%=t.getSacId() %>"><%=t.getSacNom()%></option>
+                    <option value="<%=t.getSacId() %>"><%=t.getSacNom()%> <%=t.getSacTaille().getTailleNom()%></option>
                 <% } %>
             </select>
         </span>

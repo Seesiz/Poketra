@@ -12,6 +12,7 @@
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <ul class="menu d-flex flex-column gap-2 p-0">
+                        <a href="/statistique"><li id="statistique" class="adminbtn"><i class="fa fa-chart-simple"></i> Statistique</li></a>
                         <a href="/main/?title=Unite&page=unite"><li id="unite" class="adminbtn"><i class="fa fa-swatchbook"></i> Unite</li></a>
                         <a href="/main/?title=Look&page=look"><li id="look" class="adminbtn"><i class="fa fa-pen-nib"></i> Look</li></a>
                         <a href="/prixMatiere"><li id="prixMatiere" class="adminbtn"><i class="fa fa-money-bill"></i> Prix</li></a>
@@ -35,7 +36,10 @@
                     </span>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body"></div>
+                    <ul class="menu d-flex flex-column gap-2 p-0">
+                        <a href="/achat"><li id="achat" class="ventebtn"><i class="fa fa-swatchbook"></i> Achat</li></a>
+                        <a href="/client"><li id="client" class="ventebtn"><i class="fa fa-swatchbook"></i> Client</li></a>
+                    </ul>
                 </div>
             </div>
         </div>
