@@ -17,23 +17,24 @@
                         <a href="/prixMatiere"><li id="prixMatiere" class="adminbtn"><i class="fa fa-money-bill"></i> Prix</li></a>
                         <a href="/main/?title=Matiere&page=matiere"><li id="matiere" class="adminbtn"><i class="fa-brands fa-elementor"></i> Matiere</li></a>
                         <a href="/quantite"><li id="quantite" class="adminbtn"><i class="fa-solid fa-hashtag"></i>Quantite</li></a>
-                        <a href="/employe"><li id="employe" class="adminbtn"><i class="fa fa-user"></i>Employe</li></a>
+                        <a href="/employe"><li id="employe" class="adminbtn"><i class="fa fa-clock"></i>Duree de travail</li></a>
                         <a href="/creation"><li id="creation" class="adminbtn"><i class="fa fa-tape"></i>Creation</li></a>
                         <a href="/stockMatiere"><li id="stock" class="adminbtn"><i class="fa fa-box"></i>Stock</li></a>
                         <a href="/fabrication"><li id="fabrication" class="adminbtn"><i class="fa fa-industry"></i>Fabrication</li></a>
                         <a href="/benefice"><li id="benefice" class="adminbtn"><i class="fa fa-plus"></i>Benefice</li></a>
-
+                        <a href="/poste"><li id="poste" class="adminbtn"><i class="fa fa-clipboard"></i>Poste</li></a>
+                        <a href="/travailleur"><li id="travailleur" class="adminbtn"><i class="fa fa-person"></i>Employer</li></a>
                     </ul>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <span class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accordion Item #2
+                        Vente
                     </span>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    <div class="accordion-body"></div>
                 </div>
             </div>
         </div>

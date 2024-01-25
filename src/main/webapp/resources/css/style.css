@@ -8,6 +8,7 @@
 
 *{
     transition: 0.4s;
+    font-size: 2.2vh;
     font-family: sans-serif;
 }
 
@@ -29,11 +30,40 @@ body{
     background: linear-gradient(70deg, var(--primary), var(--third)) !important;
 }
 
+.side-bar::-webkit-scrollbar{
+    display: none;
+}
+
 .menu .active{
     background: var(--bg);
     color: var(--third);
     box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.11);
+    position: relative;
 }
+
+.menu .active::after, .menu .active::before{
+    --border-radius: .5rem;
+    content: '';
+    right: 0;
+    position: absolute;
+    height: var(--border-radius);
+    width: var(--border-radius);
+    background: transparent;
+}
+
+.menu .active::after{
+    top: calc(var(--border-radius) * -1);
+    border-radius: 0 0 100vh 0;
+    box-shadow: 10px 10px 0 10px var(--bg);
+}
+
+.menu .active::before{
+    bottom: calc(var(--border-radius) * -1);
+    border-radius: 0 100vh 0 0;
+    box-shadow: 10px -10px 0 10px var(--bg);
+}
+
+
 
 .menu .active:hover{
     cursor: pointer;
